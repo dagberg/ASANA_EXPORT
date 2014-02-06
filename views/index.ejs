@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+	<!--<p>choose, but choose wisely:</p>-->
+    <p><%= projects %></p>
+    <p>but in the meantime... this will do:</p>
+    <ol>
+    	<li>BI Project: Icebox</li><br/>
+		<li>BI Project: Backlog</li><br/>
+		<li>BI Project: Workflow</li><br/>
+		<li>BI Tasks: Icebox</li><br/>
+		<li>BI Tasks: Staging</li><br/>
+		<li>BI Tasks: Prioritized Backlog</li><br/>
+		<li>BI Tasks: In Progress</li><br/>
+		<li>BI Tasks: In Test</li><br/>
+		<li>BI Tasks: Ready to Deploy</li><br/>
+		<li>BI Tasks: Deployed/Completed</li><br/>
+		<li>BI Tasks: Blocked</li><br/>
+		<li>BI Budgetary Deferrals</li>
+	</ol>
+    <form name="input" action="html_form_action.asp" method="get">
+Project: <input type="text" name="ProjNumIn">
+<input type="submit" value="Submit">
+</form>
+<p>Then I want for a user to be able to enter a number between 1 and 12 and click Submit.</p>
+<p>And that should be a key for a list of things on the back end, which would ultimately result in a .csv or .xlsx file being downloaded.</p>
+<p>And I want to understand this well enough that I can refactor and add/modify/subtract functionality at will.</p>
+  </body>
+</html>
